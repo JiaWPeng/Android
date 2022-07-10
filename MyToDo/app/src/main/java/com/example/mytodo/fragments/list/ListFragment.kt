@@ -140,7 +140,7 @@ class ListFragment : Fragment(),SearchView.OnQueryTextListener {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.menu_del_all -> delall()
-            R.id.menu_night -> mToDoViewModel.sortHigt.observe(this,{ AppCompatDelegate.MODE_NIGHT_YES})
+            //R.id.menu_night -> mToDoViewModel.sortHigt.observe(this,{ AppCompatDelegate.MODE_NIGHT_YES})
             R.id.menu_sort_high -> mToDoViewModel.sortHigt.observe(this, Observer { adapter.setData(it) })
             R.id.menu_sort_low -> mToDoViewModel.sortLow.observe(this,Observer{ adapter.setData(it) })
         }
