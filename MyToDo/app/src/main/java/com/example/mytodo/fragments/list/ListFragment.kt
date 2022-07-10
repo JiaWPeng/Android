@@ -6,9 +6,11 @@ import android.view.*
 import androidx.appcompat.widget.SearchView
 //import android.widget.SearchView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.*
 import com.example.mytodo.R
 import com.example.mytodo.data.models.ToDoData
@@ -40,9 +42,13 @@ class ListFragment : Fragment(),SearchView.OnQueryTextListener {
         binding.lifecycleOwner = this
         binding.mShareViewModel = mShareViewModel
 
-        // 设置RecyclerView
+        // 设置布局
         setRecyclerView()
 
+
+        binding.button.setOnClickListener {
+            findNavController().navigate(R.id.action_listFragment_to_settingsFragment)
+        }
         // Observer LiveData 实时监测数据
         mToDoViewModel.getAllData.observe(viewLifecycleOwner, Observer {
             mShareViewModel.checkdataempty(it)
@@ -134,6 +140,7 @@ class ListFragment : Fragment(),SearchView.OnQueryTextListener {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.menu_del_all -> delall()
+            R.id.menu_night -> mToDoViewModel.sortHigt.observe(this,{ AppCompatDelegate.MODE_NIGHT_YES})
             R.id.menu_sort_high -> mToDoViewModel.sortHigt.observe(this, Observer { adapter.setData(it) })
             R.id.menu_sort_low -> mToDoViewModel.sortLow.observe(this,Observer{ adapter.setData(it) })
         }

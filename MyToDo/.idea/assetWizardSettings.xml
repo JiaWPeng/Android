@@ -18,7 +18,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:/$PROJECT_DIR$/../../AndroidSDK/icons/material/materialicons/save/baseline_save_24.xml" />
+                                      <entry key="url" value="file:/$PROJECT_DIR$/../../AndroidSDK/icons/material/materialicons/nights_stay/baseline_nights_stay_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -28,7 +28,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_save" />
+                            <entry key="outputName" value="ic_baseline_nights_stay_24" />
                             <entry key="sourceFile" value="H:\AndroidXM\MyToDo" />
                           </map>
                         </option>

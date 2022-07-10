@@ -20,7 +20,7 @@ import kotlinx.android.synthetic.main.fragment_update.view.*
 
 class UpdateFragment : Fragment() {
 
-    // 获取数据流
+    // 获取ListFragment点击itme的数据流
     private val args by navArgs<UpdateFragmentArgs>()
     //
     private val mShareViewModel: ShareViewModel by viewModels()
@@ -39,6 +39,7 @@ class UpdateFragment : Fragment() {
         // binding
         // val view = inflater.inflate(R.layout.fragment_update, container, false)
         _binding = FragmentUpdateBinding.inflate(inflater,container,false)
+        // 绑定修改界面的数据
         binding.args = args
         // 显示菜单
         setHasOptionsMenu(true)

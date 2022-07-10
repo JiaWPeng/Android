@@ -28,5 +28,11 @@
         android:id="@+id/menu_del_all"
         android:title="@string/menu_del"
         app:showAsAction="never"/>
+    <item
+        android:id="@+id/menu_night"
+        android:title="夜间模式"
+        android:icon="@drawable/ic_baseline_nights_stay_24"
+        app:iconTint="@color/white"
+        app:showAsAction="ifRoom"/>
 
 </menu>

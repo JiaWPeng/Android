@@ -2,6 +2,7 @@ package com.example.mytodo.fragments
 
 import android.os.Build
 import android.view.View
+import android.widget.Button
 import android.widget.Spinner
 import androidx.annotation.RequiresApi
 import androidx.cardview.widget.CardView
@@ -16,6 +17,7 @@ import com.example.mytodo.data.models.Priority
 import com.example.mytodo.data.models.ToDoData
 import com.example.mytodo.fragments.list.ListFragmentDirections
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.tabs.TabLayout
 import java.lang.invoke.ConstantCallSite
 
 class BindingAdapters {
@@ -30,6 +32,15 @@ class BindingAdapters {
                      view.findNavController().navigate(R.id.action_listFragment_to_addFragment)
                  }
              }
+        }
+        @BindingAdapter("android:listToTest")
+        @JvmStatic
+        fun listToTest(view: Button,navigate: Boolean){
+            view.setOnClickListener {
+                if (navigate){
+                    view.findNavController().navigate(R.id.action_listFragment_to_blankFragment)
+                }
+            }
         }
 
         @BindingAdapter("android:emptyDatabase")

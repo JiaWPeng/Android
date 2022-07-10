@@ -9,7 +9,7 @@
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.mytodo.fragments.list.ListFragment"
-        android:label="事务列表"
+        android:label="事件列表"
         tools:layout="@layout/fragment_list" >
         <action
             android:id="@+id/action_listFragment_to_addFragment"
@@ -25,11 +25,25 @@
             app:exitAnim="@anim/to_right"
             app:popEnterAnim="@anim/from_right"
             app:popExitAnim="@anim/to_left" />
+        <action
+            android:id="@+id/action_listFragment_to_blankFragment"
+            app:destination="@id/blankFragment"
+            app:enterAnim="@anim/from_bomm"
+            app:exitAnim="@anim/to_top"
+            app:popEnterAnim="@anim/from_top"
+            app:popExitAnim="@anim/to_bomm" />
+        <action
+            android:id="@+id/action_listFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment"
+            app:enterAnim="@anim/from_bomm"
+            app:exitAnim="@anim/to_top"
+            app:popEnterAnim="@anim/from_top"
+            app:popExitAnim="@anim/to_bomm" />
     </fragment>
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.mytodo.fragments.add.AddFragment"
-        android:label="添加"
+        android:label="添加事件"
         tools:layout="@layout/fragment_add" >
         <action
             android:id="@+id/action_addFragment_to_listFragment"
@@ -40,16 +54,33 @@
     <fragment
         android:id="@+id/updateFragment"
         android:name="com.example.mytodo.fragments.update.UpdateFragment"
-        android:label="修改"
+        android:label="修改事件"
         tools:layout="@layout/fragment_update" >
         <action
             android:id="@+id/action_updateFragment_to_listFragment2"
             app:destination="@id/listFragment"
             app:enterAnim="@anim/from_right"
             app:exitAnim="@anim/to_left" />
-        <!--  Fragment之间传数据      -->
+        <!--  Fragment之间通过ToDoData.currentitem传数据      -->
         <argument
             android:name="currentitem"
             app:argType="com.example.mytodo.data.models.ToDoData" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.example.mytodo.BlankFragment"
+        android:label="设置"
+        tools:layout="@layout/fragment_blank" >
+        <action
+            android:id="@+id/action_blankFragment_to_listFragment2"
+            app:destination="@id/listFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.mytodo.SettingsFragment"
+        android:label="SettingsFragment" >
+        <action
+            android:id="@+id/action_settingsFragment_to_listFragment"
+            app:destination="@id/listFragment" />
     </fragment>
 </navigation>

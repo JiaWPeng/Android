@@ -3,20 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/drawable/ic_check.xml" value="0.1905" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/drawable/ic_no_data.xml" value="0.1975" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/drawable/ic_save.xml" value="0.3285" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/drawable/item_background.xml" value="0.2275" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/drawable/up_input.xml" value="0.1895" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/layout/activity_main.xml" value="0.5" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/layout/fragment_add.xml" value="0.31865828092243187" />
+        <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/layout/fragment_blank.xml" value="0.3578125" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/layout/fragment_list.xml" value="0.25" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/layout/fragment_update.xml" value="0.18229166666666666" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/layout/row_layout.xml" value="0.42962184873949577" />
+        <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/layout/test.xml" value="0.18125" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/menu/add_menu.xml" value="0.3578125" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/menu/list_menu.xml" value="0.33" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/menu/up_menu.xml" value="0.3578125" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2275" />
         <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2275" />
+        <entry key="..\:/AndroidXM/MyToDo/app/src/main/res/xml/root_preferences.xml" value="0.33" />
       </map>
     </option>
   </component>
