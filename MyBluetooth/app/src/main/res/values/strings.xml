@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyBluetooth</string>
+    <string name="demo">蓝牙Demo</string>
+    <string name="text_pd">已配对的设备：</string>
+    <string name="on">打开</string>
+    <string name="visible">可见</string>
+    <string name="list">设备列表</string>
+    <string name="off">关闭</string>
+</resources>

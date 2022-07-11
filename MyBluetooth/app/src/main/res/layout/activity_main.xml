@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/demo"
+        android:id="@+id/bluetooth_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="50sp"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:id="@+id/but"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bluetooth_title"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="25dp"
+        android:layout_toStartOf="@+id/but2"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="on"
+        android:text="@string/on" />
+
+    <Button
+        android:id="@+id/but2"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/but"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="25dp"
+        android:onClick="visible"
+        android:text="@string/visible" />
+
+    <Button
+        android:id="@+id/but3"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/but"
+        android:layout_toEndOf="@+id/but2"
+        android:text="@string/list"
+        android:onClick="list"/>
+
+    <Button
+        android:id="@+id/but4"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/but2"
+        android:layout_marginEnd="25dp"
+        android:layout_toStartOf="@+id/but2"
+        android:onClick="off"
+        android:text="@string/off" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/text_pd"
+        android:layout_alignStart="@id/text_pd"
+        android:layout_alignEnd="@+id/but3"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="-22dp"/>
+
+    <TextView
+        android:id="@+id/text_pd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/but4"
+        android:layout_alignStart="@id/but4"
+        android:layout_marginTop="10dp"
+        android:text="@string/text_pd"
+        android:textSize="20sp" />
+
+</RelativeLayout>
