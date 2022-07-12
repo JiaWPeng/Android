@@ -54,3 +54,16 @@ implementation("androidx.biometric:biometric:1.1.0")
 
 #### 点击验证按钮，开始识别
 
+## 6.0 OkHttpDemo
+
+#### okhttp请求使用流程
+
+1. 创建请求：Request.Builder()->Request>对象
+2. 通过Request得到Call对象：client.newCall(request)->Call对象
+3. 执行Call:同步cal.execute(),异步cal.enqueue()
+4. 得到Response对象
+
+#### BUG：
+
+1. 登录状态一直是登录成功，msg网页返回的值就是账号或者error，不知道为什么这个switch一直选择成功
+2. 注册没有完成写的有点问题

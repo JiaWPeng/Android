@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyOkHttp</string>
+    <string name="okhttp_by_login_and_register">OkHttp By Login And Register</string>
+</resources>

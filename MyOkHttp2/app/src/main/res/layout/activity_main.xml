@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+
+        android:textColor="@color/black"
+        android:text="@string/okhttp_by_login_and_register"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/user_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginTop="100dp"
+        android:text="用户名:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/user_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:layout_below="@+id/title"
+        android:layout_alignEnd="@+id/title"
+        android:layout_marginTop="90dp"
+        android:layout_toRightOf="@+id/user_text" />
+
+    <TextView
+        android:id="@+id/pwd_text"
+        android:text="    密码:"
+        android:textSize="18sp"
+        android:layout_below="@+id/user_text"
+        android:layout_alignStart="@+id/user_text"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/pwd_edit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/user_text"
+        android:layout_alignEnd="@+id/title"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/pwd_text"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd_text"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginTop="100dp"
+        android:text="注册" />
+
+    <Button
+        android:id="@+id/loginPOST"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pwd_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="POST 登录" />
+
+    <Button
+        android:id="@+id/loginGET"
+        android:text="GET 登录"
+        android:layout_below="@+id/pwd_text"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@id/loginPOST"
+        android:clickable="true"
+        android:layout_alignEnd="@id/title"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/loginEvent"
+        android:text="登录方法:"
+        android:textSize="15sp"
+        android:layout_below="@+id/Register"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/loginEvent6"
+        android:textSize="20sp"
+        android:layout_below="@+id/Register"
+        android:layout_toRightOf="@+id/loginEvent"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="Smallsp"/>
+
+    <TextView
+        android:id="@+id/loginif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginEvent"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginTop="30dp"
+        android:text="登录状态:"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/loginif7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginEvent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@+id/loginEvent"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="20sp"
+        tools:ignore="Smallsp" />
+        <!--tools:ignore 告诉Lint忽略xml中的某些警告-->
+
+    <TextView
+        android:id="@+id/loginuser"
+        android:textSize="15sp"
+        android:text="登录角色:"
+        android:layout_below="@+id/loginif"
+        android:layout_alignStart="@+id/title"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/loginuser9"
+        android:textSize="20sp"
+        android:layout_below="@+id/loginif7"
+        android:layout_toRightOf="@+id/loginEvent"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        tools:ignore="Smallsp"/>
+
+
+
+
+</RelativeLayout>
