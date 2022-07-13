@@ -67,3 +67,8 @@ implementation("androidx.biometric:biometric:1.1.0")
 
 1. **登录状态一直是登录成功，msg网页返回的值就是账号或者error，不知道为什么这个switch一直选择成功**
 2. **注册没有完成写的有点问题**
+
+## 7.0 传感器Demo
+
+**使用SensorManger类来获得本机传感器**
+
