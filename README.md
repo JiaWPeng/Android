@@ -84,7 +84,7 @@ implementation("androidx.biometric:biometric:1.1.0")
 - **兼容性说明：对于面向 Build.VERSION_CODES.Q 或更高版本的应用程序，此 API 将始终返回 false 并且无效。**
 - **如果应用针对的是较旧的 SDK（Build.VERSION_CODES.P 或更低版本），它们可以继续使用此 API。**
 
-### **解决方法**
+### **解决API29 setWifiEnabled方法不生效**
 
 ```java
 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
@@ -93,4 +93,4 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
 }
 ```
 
-**调用系统自带的网络链接窗口，来选择网络的连接；可以使用WIFI，移动网络。**
+**调用系统自带网络连接的窗口，来选择网络的连接；可以使用WIFI，移动网络。**
