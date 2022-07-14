@@ -2,7 +2,7 @@
 ## 1.0 事件管理App Demo
 #### 使用MVVM架构
 #### App中使用到Navigation、Fragment、Data BinDing、持久本地存储ROOM
-## 1.1Demo使用
+## 1.1 Demo使用
 #### 		点击 + 创建新事件
 #### 		在列表界面可以点击事件进入事件修改及删除  //列表界面也可以左滑删除事件
 #### 		排序从优先级高到低或者优先级低到高
@@ -44,7 +44,7 @@ android.permission.CAMERA
 
 #### 		导入生物识别的依赖包		
 
-```
+```java
 implementation("androidx.biometric:biometric:1.1.0")
 ```
 
@@ -72,3 +72,25 @@ implementation("androidx.biometric:biometric:1.1.0")
 
 ​		**使用SensorManger类来获得本机传感器**
 
+## 8.0 WIFIDemo
+
+​		**使用WIfiManger类来获得本机WIFI状态**
+
+​		**点击扫描时设备需打开系统设置 -- > 位置信息后才可以显示附近WiFi网络名称，不需要打开WiFi**
+
+​		**Android10及以上 setWifiEnabled()方法不生效**
+
+- **此方法在 API 级别 29 中已弃用。从 Build.VERSION_CODES#Q 开始，不允许应用程序启用/禁用 Wi-Fi。**
+- **兼容性说明：对于面向 Build.VERSION_CODES.Q 或更高版本的应用程序，此 API 将始终返回 false 并且无效。**
+- **如果应用针对的是较旧的 SDK（Build.VERSION_CODES.P 或更低版本），它们可以继续使用此 API。**
+
+### **解决方法**
+
+```java
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
+		Intent pen = new Intent ( Settings.Panel.ACTION_INTERNET_CONNECTIVITY );
+        startActivityForResult ( pen,0 );
+}
+```
+
+**调用系统自带的网络链接窗口，来选择网络的连接；可以使用WIFI，移动网络。**
