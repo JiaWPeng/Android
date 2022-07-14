@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyNFC</string>
+    <string name="info">扫描中… </string >
+</resources>
