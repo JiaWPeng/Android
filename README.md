@@ -54,7 +54,7 @@ implementation("androidx.biometric:biometric:1.1.0")
 
 #### 		点击验证按钮，开始识别
 
-## 6.0 OkHttpDemo
+## 6.0 OkHttp Demo
 
 #### 	okhttp请求使用流程
 
@@ -72,7 +72,7 @@ implementation("androidx.biometric:biometric:1.1.0")
 
 ​		**使用SensorManger类来获得本机传感器**
 
-## 8.0 WIFIDemo
+## 8.0 WIFI Demo
 
 ​		**使用WIfiManger类来获得本机WIFI状态**
 
@@ -94,3 +94,14 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
 ```
 
 **调用系统自带网络连接的窗口，来选择网络的连接；可以使用WIFI，移动网络。**
+
+## 9.0 NFC Demo
+
+**将卡片放置手机NFC线圈初，会自动打开Demo并显示卡片类型等内容**
+
+**本Demo使用NfcAdapter，Tag类**
+
+**Android还自带NfcManger，NdefRecord，NderMessage等**
+
+**其他类请看**[Google官方文档](https://developer.android.com/reference/android/nfc/package-summary)
+
