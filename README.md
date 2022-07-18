@@ -105,3 +105,11 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
 
 **其他类请看**[Google官方文档](https://developer.android.com/reference/android/nfc/package-summary)
 
+## 10.0 Video Demo
+
+- **使用MediaController+VideoView控件来实现视频播放**
+  1. MediaConntroller提供进度条，开始，暂停等操作，无需自己添加
+  2. VideoView继承SurfaceView，提供丰富的API如，seekTo()是设置从第几毫秒开始播放
+- 使用MediaPlayer+SurfaceView来实现视频播放
+  1. MediaPlayer主要提供音频播放，需要结合SurfaceView来播放视频
+  2. SurfaceView需要自定义控件来控制开始，暂停等，难度较大
