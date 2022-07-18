@@ -113,3 +113,9 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
 - 使用MediaPlayer+SurfaceView来实现视频播放
   1. MediaPlayer主要提供音频播放，需要结合SurfaceView来播放视频
   2. SurfaceView需要自定义控件来控制开始，暂停等，难度较大
+
+## 11.0 消息通知Demo
+
+**使用Notification方法来设置消息通知的各个属性**
+
+**如果是安卓8版本需要设置NotificationChannel方法**
