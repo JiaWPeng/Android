@@ -122,6 +122,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
 
 ## 12.0 仿微信语音
 
-**按住说话，松开保存，上滑取消保存**
+**可以按住录音，松开保存，上滑取消保存，播放录音**
 
-使用
+- **使用MediaPlayer播放音频**
+- 使用MediaRecorder录音
+- 对Android11的存储权限适配
