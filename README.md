@@ -120,3 +120,8 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
 
 **如果是Android 8.0（API 26）以上版本需要设置NotificationChannel方法**
 
+## 12.0 仿微信语音
+
+**按住说话，松开保存，上滑取消保存**
+
+使用
