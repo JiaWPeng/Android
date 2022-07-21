@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:background="@drawable/mic_bgd"
+        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp" >
+    <ImageView
+        android:id="@+id/mic_image"
+        android:src="@drawable/mic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+         />
+    <TextView
+        android:text="00:00"
+        android:id="@+id/mic_text"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/cancel_text"
+        android:text="上滑取消"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

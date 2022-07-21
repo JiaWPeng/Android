@@ -118,4 +118,5 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
 
 **使用Notification方法来设置消息通知的各个属性**
 
-**如果是安卓8版本需要设置NotificationChannel方法**
+**如果是Android 8.0（API 26）以上版本需要设置NotificationChannel方法**
+
