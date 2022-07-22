@@ -28,10 +28,11 @@ public class ImageUilts {
                     Log.d(TAG, "ImageUilts: "+files[i]+"已删除");
                 }
             }
-            path.mkdir();
+            path.mkdirs();
             Log.d(TAG, "ImageUilts: 删除成功");
         }
         this.FolderPath = filePath;
+        Log.d(TAG, "ImageUilts: "+FolderPath);
     }
 
     // 根据文件路径获取byte流

@@ -1,14 +1,14 @@
 # Android
-## 1.0 事件管理App Demo
+## 1.0 事件管理App
 #### 使用MVVM架构
 #### App中使用到Navigation、Fragment、Data BinDing、持久本地存储ROOM
-## 1.1 Demo使用
+## 1.1 APP使用
 #### 		点击 + 创建新事件
 #### 		在列表界面可以点击事件进入事件修改及删除  //列表界面也可以左滑删除事件
 #### 		排序从优先级高到低或者优先级低到高
 #### 		搜索是文本中只要有的输入关键字都会显示出来
 
-## 2.0 手电筒Demo
+## 2.0 手电筒 Demo
 
 #### 		调用相机权限完成闪光灯的开/关
 
@@ -28,7 +28,7 @@ android.permission.CAMERA
 
 #### 		打开自动访问网站生成RecyclerView里相应的内容
 
-## 4.0 蓝牙Demo
+## 4.0 蓝牙 Demo
 
 #### 		使用安卓自带的getDefaultAdapter()方法来与手机的蓝牙模块通信
 
@@ -40,7 +40,7 @@ android.permission.CAMERA
 
 #### 		点击配对按钮是显示已配对的设备
 
-## 5.0 生物识别Demo
+## 5.0 生物识别 Demo
 
 #### 		导入生物识别的依赖包		
 
@@ -68,7 +68,7 @@ implementation("androidx.biometric:biometric:1.1.0")
 1. **登录状态一直是登录成功，msg网页返回的值就是账号或者error，不知道为什么这个switch一直选择成功**
 2. **注册没有完成写的有点问题**
 
-## 7.0 传感器Demo
+## 7.0 传感器 Demo
 
 ​		**使用SensorManger类来获得本机传感器**
 
@@ -114,7 +114,7 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
   1. MediaPlayer主要提供音频播放，需要结合SurfaceView来播放视频
   2. SurfaceView需要自定义控件来控制开始，暂停等，难度较大
 
-## 11.0 消息通知Demo
+## 11.0 消息通知 Demo
 
 **使用Notification方法来设置消息通知的各个属性**
 
@@ -125,5 +125,12 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
 **可以按住录音，松开保存，上滑取消保存，播放录音**
 
 - **使用MediaPlayer播放音频**
-- 使用MediaRecorder录音
-- 对Android11的存储权限适配
+- **使用MediaRecorder录音**
+- **对Android11的存储权限适配**
+
+## 13.0 相机 Demo
+
+**调用系统相机拍照，并返回照片**
+
+- **安卓7.0以上使用FileProvider类来共享文件夹，以下使用Uri直接访问SD卡，完成回调**
+- **Demo每次拍照都会进行清除上次的照片**
