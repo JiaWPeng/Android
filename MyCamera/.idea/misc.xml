@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidXM/MyCamera/app/src/main/res/drawable/ic_baseline_data_usage_24.xml" value="0.1905" />
+        <entry key="..\:/AndroidXM/MyCamera/app/src/main/res/drawable/image_bj.xml" value="0.1895" />
         <entry key="..\:/AndroidXM/MyCamera/app/src/main/res/layout/activity_main.xml" value="0.34322916666666664" />
         <entry key="..\:/AndroidXM/MyCamera/app/src/main/res/xml/file_paths.xml" value="0.18229166666666666" />
       </map>

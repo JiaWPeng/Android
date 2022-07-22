@@ -28,6 +28,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jwpeng.mycamera.Uilts.TimeUilt;
@@ -42,7 +43,8 @@ public class MainActivity extends AppCompatActivity {
     private ImageUilts imageUilts;
     private Button button,xcBut;
     private String TAG = "MyCamera";
-    private ImageView imageView;
+    private ImageView imageView,iv;
+    private TextView textView;
     public Uri photoUri,xcuri;
 
     @Override
@@ -58,6 +60,8 @@ public class MainActivity extends AppCompatActivity {
         button = findViewById(R.id.but);
         imageView = findViewById(R.id.image);
         xcBut = findViewById(R.id.xc_but);
+        iv = findViewById(R.id.imageView);
+        textView = findViewById(R.id.iv_text);
     }
 
     private void initEvent() {
@@ -192,6 +196,8 @@ public class MainActivity extends AppCompatActivity {
         if (requestCode == REQUEST_CODE_CAMERA) {
             Uri uri = null;
             uri = photoUri;
+            iv.setVisibility(View.INVISIBLE);
+            textView.setVisibility(View.INVISIBLE);
             imageView.setImageURI(uri);
             Log.d(TAG, "onActivityResult: "+uri);
         }
@@ -210,6 +216,8 @@ public class MainActivity extends AppCompatActivity {
                         try {
                             // 缩略图
                             bitmap = BitmapFactory.decodeStream(getContentResolver().openInputStream(xcuri));
+                            iv.setVisibility(View.INVISIBLE);
+                            textView.setVisibility(View.INVISIBLE);
                             imageView.setImageBitmap(bitmap); // 将裁剪后的照片显示出来
                             Log.d(TAG, "onActivityResult: bitmap "+bitmap);
                         } catch (FileNotFoundException e) {
