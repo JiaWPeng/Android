@@ -135,3 +135,4 @@ if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q){
 - **安卓7.0以上使用FileProvider类来共享文件夹，以下使用Uri直接访问SD卡，完成回调**
 - **Demo每次拍照都会进行清除上次的照片**
 - **从相册选择时，使用系统裁剪API创建图片**
+
